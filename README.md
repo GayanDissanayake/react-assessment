@@ -1,54 +1,33 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Image Carousel
 
-Currently, two official plugins are available:
+A responsive image carousel built with React, TypeScript, and Tailwind CSS, featuring swipe and button navigation with a slide animation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup Instructions
 
-## Expanding the ESLint configuration
+**Clone the Repository**:
+git clone https://github.com/GayanDissanayake/react-assessment.git
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Install Dependencies**:
+npm install
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+**Run Program**:
+npm run dev
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Opens the app at http://localhost:5173 (or as specified in the terminal).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Approach and Dependencies
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+**Approach**: The carousel was built using Vite with React and TypeScript for a modern, type-safe setup. It features a custom slide-based navigation with a slide animation implemented using transition-translateX. Swipe functionality was added with touch event handlers, and navigation arrrow buttons enhance user interaction. The design is responsive, tested across desktop and mobile views.
+
+**Dependencies**:
+vite@^5.x.x: Fast development server and build tool.
+react@^18.0.0 and react-dom@^18.0.0: Core React libraries.
+typescript@^5.x.x: Type safety and enhanced development experience.
+tailwindcss@^3.0.0, postcss@^8.0.0, autoprefixer@^10.0.0: Styling with utility-first CSS.
+react-feather: SVG icon components for navigation arrows.
+
+## Recording Link
+
+https://drive.google.com/file/d/1-dlPEF40vqeL8_c7mZn3L4w2GLJNdBDJ/view?usp=sharing
